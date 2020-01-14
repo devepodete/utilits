@@ -1,9 +1,11 @@
 # Convert Turing Machine to Markov's algorithm's code :floppy_disk:
 
-## Example of Turing Machine commands:
+## Example:
 
+### Turing Machine file
 ```
 00,a,>,01
 02,a,#,55
 z,%,@,aaaa
 ```
+### Result in Markov's algorithm
