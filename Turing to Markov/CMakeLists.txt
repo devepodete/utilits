@@ -1,8 +1,11 @@
+set(EXECUTION_FILENAME tm_converter.out)
+
 cmake_minimum_required(VERSION 3.10)
 project(turing_markov_converter)
 
 set(CMAKE_CXX_STANDARD 11)
-add_executable(tm_converter.out turing-markov.cpp)
+add_library(full_library STATIC processing.cpp output.cpp)
 
-find_library(FULL_LIBRARY full_lib lib)
-target_link_libraries(tm_converter.out LINK_PUBLIC ${FULL_LIBRARY})
+add_executable(${EXECUTION_FILENAME} turing-markov.cpp)
+
+target_link_libraries(${EXECUTION_FILENAME} full_library)

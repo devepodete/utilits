@@ -2,8 +2,8 @@
 #include <vector>
 #include <string>
 
-#include "./lib_source/processing.hpp"
-#include "./lib_source/output.hpp"
+#include "processing.hpp"
+#include "output.hpp"
 
 int main(int argc, char *argv[]){
 	if(argc == 3){
