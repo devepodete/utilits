@@ -9,3 +9,9 @@
 z,%,@,aaaa
 ```
 ### Result in Markov's algorithm
+```
+a(00)A->aA(01)
+a(00)->a_(01)
+a(02)->.a(55)
+%(z)->@(aaaa)
+```
