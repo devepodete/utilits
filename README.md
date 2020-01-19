@@ -1,2 +1,7 @@
 # Utilits - ? :laughing:
-This repostiroy has been made to store some useful programs.
+
+Для большинства программ, написанных на C/C++, написал CMakeLists.txt. В таком случае собирать проект можно так:
+```bash
+cmake CMakeLists.txt
+make
+```
