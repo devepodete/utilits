@@ -1,6 +1,6 @@
 res="$(ls -A /run/user/1000/gvfs)"
 if [ -z "$res" ]; then
-	echo "No devices found"
+	echo "Device not found"
 else
 	telegram_files=5
 	whatsapp_files=10
@@ -39,7 +39,7 @@ else
 			cp "$file_name" "$telegram_save_path"
 		done
 	else
-		echo "Telegram path did not find"
+		echo "Telegram path not found"
 	fi
 	
 	if ! [ -z "$whatsapp_path" ]; then
@@ -57,7 +57,7 @@ else
 			cp "$file_name" "$whatsapp_save_path"
 		done
 	else
-		echo "WhatsApp path did not find"
+		echo "WhatsApp path not found"
 	fi
 
 	if ! [ -z "$vk_path" ]; then
@@ -75,6 +75,6 @@ else
 			cp "$file_name" "$vk_save_path"
 		done
 	else
-		echo "VK path did not find"
+		echo "VK path not found"
 	fi
 fi
