@@ -1,4 +1,5 @@
-res="$(ls -A /run/user/1000/gvfs)"
+user_id=$(id -u)
+res="$(ls -A /run/user/${user_id}/gvfs)"
 if [ -z "$res" ]; then
 	echo "Device not found"
 else
