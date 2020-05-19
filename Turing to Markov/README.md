@@ -1,4 +1,4 @@
-# Convert Turing Machine to Markov's algorithm's code :floppy_disk:
+# Convert Turing Machine to Markov's algorithm code :floppy_disk:
 
 ## Example:
 
